@@ -57,7 +57,7 @@ vim.o.termguicolors = true
 vim.o.background = "dark"
 
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = "menuone,noselect"
+vim.o.completeopt = "menuone,noselect,preview"
 
 vim.opt.clipboard:append("unnamedplus")
 
