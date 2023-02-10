@@ -3,13 +3,16 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
         local null_ls = require("null-ls")
+        local b = null_ls.builtins
 
         null_ls.setup({
             sources = {
-                null_ls.builtins.formatting.stylua,
-                null_ls.builtins.formatting.black,
-                null_ls.builtins.formatting.isort,
-                null_ls.builtins.diagnostics.credo,
+                b.formatting.stylua,
+                b.formatting.black,
+                b.formatting.isort,
+                b.diagnostics.credo,
+                b.code_actions.gitrebase,
+                b.code_actions.gitsigns,
             },
             on_attach = function(client, _)
                 require("lsp-format").on_attach(client)
