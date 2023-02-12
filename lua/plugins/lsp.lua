@@ -47,7 +47,7 @@ local servers = {
     },
     elixirls = {},
     pyright = {},
-    sumneko_lua = {
+    lua_ls = {
         settings = {
             Lua = {
                 workspace = { checkThirdParty = false },
