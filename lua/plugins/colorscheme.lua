@@ -6,6 +6,9 @@ return {
     config = function()
         require("catppuccin").setup({
             integrations = {
+                barbecue = {
+                    dim_dirname = true,
+                },
                 mason = true,
                 cmp = true,
                 nvimtree = true,

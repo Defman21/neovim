@@ -49,6 +49,7 @@ vim.o.smartcase = true
 vim.o.updatetime = 250
 vim.wo.signcolumn = "yes"
 
+vim.o.timeout = true
 vim.o.timeoutlen = 300
 
 -- Set colorscheme
