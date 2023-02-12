@@ -20,6 +20,10 @@ return {
                     enabled = true,
                     colored_indent_levels = true,
                 },
+                navic = {
+                    enabled = false,
+                    custom_bg = "NONE",
+                },
                 native_lsp = {
                     enabled = true,
                     virtual_text = {
