@@ -136,7 +136,7 @@ vim.diagnostic.config({
     signs = true,
     underline = true,
     update_in_insert = false,
-    severity_sort = false,
+    severity_sort = true,
 })
 
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
@@ -145,7 +145,7 @@ for type, icon in pairs(signs) do
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
-vim.o.statuscolumn = "%=%l %s%C"
+vim.o.statuscolumn = "%=%r %s%C"
 
 if vim.g.neovide then
     local nmap = function(keys, cmd)
