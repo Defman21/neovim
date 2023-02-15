@@ -56,6 +56,7 @@ local servers = {
         },
     },
     gopls = {},
+    ruff_lsp = {},
 }
 
 return {
