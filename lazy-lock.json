@@ -35,5 +35,6 @@
   "vim-sleuth": { "branch": "master", "commit": "1cc4557420f215d02c4d2645a748a816c220e99b" },
   "vim-tmux-navigator": { "branch": "master", "commit": "cdd66d6a37d991bba7997d593586fc51a5b37aa8" },
   "vim-wakatime": { "branch": "master", "commit": "ee4ab57adf62a309aeef383a2da23b6e48e5ae50" },
-  "which-key.nvim": { "branch": "main", "commit": "5224c261825263f46f6771f1b644cae33cd06995" }
+  "which-key.nvim": { "branch": "main", "commit": "5224c261825263f46f6771f1b644cae33cd06995" },
+  "yaml-companion.nvim": { "branch": "main", "commit": "cc3525cf6e03d8c98321c913fcad74b8fb6d7688" }
 }
