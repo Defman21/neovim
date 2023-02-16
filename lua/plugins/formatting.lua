@@ -13,7 +13,11 @@ return {
                         return vim.fn.fnamemodify(params.bufname, ":h")
                     end,
                 }),
-                b.formatting.isort,
+                b.formatting.isort.with({
+                    cwd = function(params)
+                        return vim.fn.fnamemodify(params.bufname, ":h")
+                    end,
+                }),
                 b.diagnostics.credo,
                 b.code_actions.gitrebase,
                 b.code_actions.gitsigns,
