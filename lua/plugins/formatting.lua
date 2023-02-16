@@ -8,7 +8,11 @@ return {
         null_ls.setup({
             sources = {
                 b.formatting.stylua,
-                b.formatting.black,
+                b.formatting.black.with({
+                    cwd = function(params)
+                        return vim.fn.fnamemodify(params.bufname, ":h")
+                    end,
+                }),
                 b.formatting.isort,
                 b.diagnostics.credo,
                 b.code_actions.gitrebase,
