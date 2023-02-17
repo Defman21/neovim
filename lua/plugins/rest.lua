@@ -34,6 +34,6 @@ return {
             custom_dynamic_variables = {},
             yank_dry_run = true,
         })
-        vim.keymap.set("n", "<leader>rr", "<Plug>RestNvim<CR>", { desc = "[R]un [R]estNvim" })
+        vim.keymap.set("n", "<leader>rr", "<Plug>RestNvim", { desc = "[R]un [R]estNvim" })
     end,
 }
