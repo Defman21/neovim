@@ -57,6 +57,13 @@ vim.o.termguicolors = true
 
 vim.o.background = "dark"
 
+vim.o.statuscolumn =
+    '%=%{&rnu && v:virtnum < 1 ? (v:relnum ? v:relnum : v:lnum) : &nu && v:virtnum < 1 ? v:lnum : ""}%=%s%C'
+vim.o.scrolloff = 5
+vim.o.sidescrolloff = 5
+vim.o.showmode = false
+vim.o.autowriteall = true
+
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = "menuone,noselect,preview"
 
@@ -144,8 +151,6 @@ for type, icon in pairs(signs) do
     local hl = "DiagnosticSign" .. type
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
-
-vim.o.statuscolumn = "%=%{v:relnum?v:relnum:v:lnum} %s%C"
 
 if vim.g.neovide then
     local nmap = function(keys, cmd)
