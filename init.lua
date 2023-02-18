@@ -145,7 +145,7 @@ for type, icon in pairs(signs) do
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
-vim.o.statuscolumn = "%=%r %s%C"
+vim.o.statuscolumn = "%=%{v:relnum?v:relnum:v:lnum} %s%C"
 
 if vim.g.neovide then
     local nmap = function(keys, cmd)
