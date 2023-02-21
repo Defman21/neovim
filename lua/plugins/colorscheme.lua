@@ -6,6 +6,9 @@ return {
     config = function()
         require("catppuccin").setup({
             integrations = {
+                barbar = true,
+                which_key = true,
+                lsp_trouble = true,
                 barbecue = {
                     dim_dirname = true,
                 },
