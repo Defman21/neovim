@@ -58,7 +58,7 @@ vim.o.termguicolors = true
 vim.o.background = "dark"
 
 vim.o.statuscolumn =
-    '%=%{&rnu && v:virtnum < 1 ? (v:relnum ? v:relnum : v:lnum) : &nu && v:virtnum < 1 ? v:lnum : ""}%=%s%C'
+'%=%{&rnu && v:virtnum < 1 ? (v:relnum ? v:relnum : v:lnum) : &nu && v:virtnum < 1 ? v:lnum : ""}%=%s%C'
 vim.o.scrolloff = 5
 vim.o.sidescrolloff = 5
 vim.o.showmode = false
@@ -140,7 +140,7 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
 
 vim.diagnostic.config({
     virtual_text = {
-        prefix = '▎',
+        prefix = "▎",
     },
     signs = true,
     underline = true,
